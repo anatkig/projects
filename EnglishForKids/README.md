@@ -1,1 +1,1 @@
-https://anatkig.github.io/projects/anatkig/EnglishForKids
+https://anatkig.github.io/projects/EnglishForKids
