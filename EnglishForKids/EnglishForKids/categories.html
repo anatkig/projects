@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;display=swap" rel="stylesheet">
+        <title>Cards</title>
+
+        <link href="styles.css" rel="stylesheet">
+        <link href="headerStyle.css" rel="stylesheet">
+        <link href="cards.css" rel="stylesheet">
+        <link href="bootstrap.css" rel="stylesheet">
+    </head>
+<body onload="loadPics(),changerCat(),addListenersCards()">
+    <div id="root"><div class="app-container">
+        <div class="header-container">
+            <nav role="navigation">
+                <div class="menuToggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul class="menu">
+                        <a class="header-item" href="#/">Main Page</a>
+                        <a class="header-item active" href="#/cards">Action (set A)</a>
+                        <a class="header-item" href="#/cards">Action (set B)</a>
+                        <a class="header-item" href="#/cards">Action (set C)</a>
+                        <a class="header-item" href="#/cards">Adjective</a>
+                        <a class="header-item" href="#/cards">Animal (set A)</a>
+                        <a class="header-item" href="#/cards">Animal (set B)</a>
+                        <a class="header-item" href="#/cards">Clothes</a>
+                        <a class="header-item" href="#/cards">Emotion</a>
+                    </ul>
+                </div>
+            </nav>
+            <div class="switch-container">
+                <label class="switch">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-label" data-on="Train" data-off="Play"></span>
+                    <span class="switch-handle"></span>
+                </label>
+            </div>
+        </div>
+        <div class="container"><div class="rating none"></div>
+        <div class="card-container">
+            <div class="card card-cover">
+                <div class="front" >
+                    <div class="card-header none">cry</div>
+                    <audio>
+                        <source type="audio/mpeg">
+                    </audio>
+            </div>
+            <div class="back" >
+                    <div class="card-header none">плакать</div>
+                </div>
+                <div class="rotate none"></div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card card-cover">
+                <div class="front" >
+                    <div class="card-header none">dance</div>
+                    <audio>
+                        <source type="audio/mpeg">
+                    </audio>
+            </div>
+            <div class="back" >
+                <div class="card-header none">танцевать</div>
+            </div>
+            <div class="rotate none"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card card-cover">
+            <div class="front" >
+                <div class="card-header none">dive</div>
+                
+                <audio>
+                    <source type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="back" >
+                <div class="card-header none">нырять</div>
+            </div>
+            <div class="rotate none"></div>
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card card-cover">
+            <div class="front" >
+                <div class="card-header none">draw</div>
+                <audio>
+                    <source type="audio/mpeg">
+                </audio>
+            </div>
+            <div class="back" >
+                    <div class="card-header none">рисовать</div></div><div class="rotate none"></div>
+                </div>
+            </div>
+            <div class="card-container">
+
+                <div class="card card-cover">
+                    <div class="front" >
+                        <div class="card-header none">fish</div>
+                        <audio>
+                            <source>
+                                
+                        </audio>
+                    </div>
+
+                    <div class="back" >
+                        <div class="card-header none">ловить рыбу</div></div>
+                        <div class="rotate none"></div></div>
+                    </div>
+                        <div class="card-container">
+                            <div class="card card-cover">
+                            <div class="front" >
+                            <div class="card-header none">fly</div>
+                            <audio>
+                                <source type="audio/mpeg">
+                            </audio>
+                            </div>
+
+                            <div class="back" >
+                                <div class="card-header none">летать</div></div>
+                                <div class="rotate none">
+                                </div>
+                            </div>
+                        </div>
+                                <div class="card-container">
+                                    
+                                    <div class="card card-cover">
+                <div class="front" >
+                    <div class="card-header none">hug</div>
+                    <audio>
+                        <source type="audio/mpeg">
+                    </audio>
+                </div>
+                    <div class="back" >
+                        <div class="card-header none">обнимать</div></div>
+                        <div class="rotate none"></div></div></div>
+                        <div class="card-container">
+                            <div class="card card-cover">
+                                <div class="front" >
+                <div class="card-header none">jump</div>
+                <audio>
+                    <source type="audio/mpeg">
+                </audio>
+            </div>
+                <div class="back" >
+                <div class="card-header none">прыгать</div></div>
+                <div class="rotate none"></div></div></div>
+                
+                <div class="btns"><button class="btn">Start game</button>
+                </div><audio class="audio"></audio>
+                <audio class="soundEffects"></audio>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="action.js"></script>
+    <script type="text/javascript" src="categories.js"></script>
+    <script type="text/javascript" src="cards.js"></script>
+            </body>
+</html>
